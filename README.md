@@ -4,7 +4,7 @@ Proyecto para el grupo de estudio del ISPC
 
 Integrantes:
 
-        Vanesa Manzanelli -
+        Vanesa Manzanelli 
         Caro Pómpolo Maria Fernanda  
         Rebechi Franco Ezequiel   
         Bianco Sergio Alejandro  
@@ -17,13 +17,13 @@ Integrantes:
 
 IMPORTANTE:
 
-SPRINT 1 Fecha Inicio = 03/10/2022 - Fecha de Fin = 17/10/2022 ****** En las próximas semanas se dejará más detallado cada punto.
+**SPRINT 1** Fecha Inicio = 03/10/2022 - Fecha de Fin = 17/10/2022 ****** En las próximas semanas se dejará más detallado cada punto.
 
 • FrontEnd: Estructura HTML, semántica y estilos CSS
 • Navegabilidad - Links funcionales. Responsive
 • BOOTSTRAP y funcionalidad con JavaScript
 
-SPRINT 2 Fecha Inicio = 17/10/2022 - Fecha de Fin = 14/11/2022 ****** En las próximas semanas se dejará más detallado cada punto.
+**SPRINT 2** Fecha Inicio = 17/10/2022 - Fecha de Fin = 14/11/2022 ****** En las próximas semanas se dejará más detallado cada punto.
 
 • Sitio funcional en hosting remoto de Sitio Institucional en WordPress y Frontend en subcarpeta (subdominio) y opcional linkeado al repositorio de GitHub/ GitHub Pages.
 
