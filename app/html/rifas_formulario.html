@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirifa.net - crear tu rifa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- seccion header -->
+    <div class="header">
+        <h6 style="padding:50px;" >Aquí va el navbar que hará María.</h6>
+    </div>
+
+    <!-- seccion contenido  -->
+    <div class="content">
+        <div class="info container">
+           
+            <h4 class="text-center fs-2 p-4">Configurar tu rifa</h4>
+            <div class="formulario">                
+                  <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">Elige un nombre para tu sorteo</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Como quieres que se llame tu rifa">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">¿Cuál es el motivo de la rifa?</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" placeholder="Describe brevemente tu rifa"></textarea>
+                  </div>
+                  <div class="mb-3">
+                    <input class="form-control mb-3" type="text" placeholder="Organizador" aria-label="default input example">
+                    <input class="form-control mb-3" type="text" placeholder="PREMIO 1" aria-label="default input example">
+                    <input class="form-control mb-3" type="text" placeholder="PREMIO 2" aria-label="default input example">
+                    <input class="form-control mb-3" type="text" placeholder="PREMIO 3" aria-label="default input example">
+                </div>
+              
+                    <p>¿Cuántas rifas quieres ofrecer?</p>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">50</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">100</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">200</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">500</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">1000</label>
+                      </div>
+                      <p class="m-3">¿Cúal es el valor de cada rifa?</p>                       
+                        <!-- cambiar por otro mejor   y centrar     -->     
+                    <div class="col ">
+                        <select class="form-select" id="validationCustom04" required>
+                            <option selected disabled value="">Elegir el valor</option>
+                            <option>$ 100</option>
+                            <option>$ 150</option>
+                            <option>$ 200</option>
+                            <option>$ 250</option>
+                            <option>$ 300</option>
+                            <option>$ 350</option>
+                            <option>$ 400</option>
+                            <option>$ 450</option>
+                        </select>
+                    </div>
+                    <p class="m-3">Ingresa los datos para recibir la transferencia</p>    
+                    <div class="mb-3">
+                        <input class="form-control mb-3" type="text" placeholder="Nombre del titular" aria-label="default input example">
+                        <input class="form-control mb-3" type="text" placeholder="CBU/CVU" aria-label="default input example">
+                        <input class="form-control mb-3" type="text" placeholder="Banco" aria-label="default input example">                       
+                    </div>    
+                    <p class="m-3">¿Cúando finaliza tu sorteo?</p>  
+                    <input type="date" id="start" name="trip-start"
+                        value="2022-10-10"
+                        min="2022-10-10" max="2027-12-31">
+                    <div class="row mt-3">    
+                        <select class="form-select" id="validationCustom04" required>
+                            <option selected disabled value="">Figurar en Rifas destacadas</option>
+                            <option>No figurar en Rifas destacadas</option>                          
+                        </select>
+                    </div>
+                    <div class="info_final row-fluid mt-3"></div>
+                    
+                        <p class="fw-bold mb-0">Los datos personales no serán publicados</p>
+                        <p class="mb-0">Compruebe que los datos ingresados seran correctos</p>
+                        <p>No podrán ser modificados posteriormente.</p>
+                    </div>
+
+                    <button type="button" class="btn btn-primary btn-lg">CREAR RIFA</button>
+            </div>
+          
+        </div>      
+    </div>
+
+    <!-- seccion footer -->
+    <div class="footer" style="padding:15px;">
+
+        <h6>Acá va el footer!</h6>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
