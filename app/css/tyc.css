@@ -1,0 +1,94 @@
+header{
+    height: 10%;
+    margin: 0 auto;
+}
+
+.logo-mirifa{
+    width: 75px;
+
+}
+header a{
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+body{
+    background: linear-gradient(rgba(233, 241, 248, 0.15),rgba(235, 239, 250, 0.50)),url("../img/Fondo1.jpg") no-repeat fixed;
+    background-size: cover;
+    
+
+}
+.container-tyc{
+    margin: 0 5%;
+}
+#tyc{
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: center;
+}
+p.tyc{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 10px;
+    text-align: justify;
+}
+/*go top*/
+.go-top-container{
+    position: fixed;
+    bottom: 4rem;
+    right: 4rem;
+    width: 6.6rem;
+    height: 6.6rem;
+    z-index: -1;
+}
+
+.go-top-btn{
+    width: 0rem;
+    height: 0rem;
+    background: #0f5769;
+    border-radius: 50%;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+
+
+}
+.go-top-btn i {
+    position: absolute;
+    font-size: 1.7rem;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    color: #fff;
+    transition: 0.2s;
+
+
+}
+.show{
+    z-index: 10;
+}
+
+.show .go-top-btn{
+    animation: popup .3s ease-in-out;
+    width: 5.5em;
+    height: 5.5em;
+    z-index: 11;
+}
+.show i{
+    transform: translate(-50%,50%) scale(1);
+}
+@keyframes popup{
+    0%{
+        width: 0rem;
+        height: 0rem;
+    }
+    50%{
+        width:8rem;
+        height: 8rem;
+    }
+    100%{
+        width: 6.6rem;
+        height: 6.6rem;
+    }
+}
