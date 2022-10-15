@@ -21,16 +21,35 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul class="ul_nav">
-                <li class="logo_mf"><a href="./index.html"><img src="../imagenes/Logo-mirifa.png" alt=""> MIRIFA.NET</a></li>
-                <li class="nav_mf"><a href="./rifasactuales.html">RIFAS ACTUALES</a></li>
-                <li class="nav_mf"><a href="">PLANES</a></li>
-                <li class="nav_mf"><a href="">CONTACTANOS</a></li>
-                <li class="nav_mf"><a href="./preguntasfrecuentes.html">PREGUNTAS FRECUENTES</a></li>
-                <li class="login_mf"><a href="">INGRESA</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg d-flex">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="../imagenes/Logo-mirifa.png" alt="Logo" class="d-inline-block">MIRIFA.NET
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-around" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./rifasactuales.html">RIFAS ACTUALES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">PLANES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACTANOS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./preguntasfrecuentes.html">PREGUNTAS FRECUENTES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-login text-white" href="#">INGRESA</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     <div class="container-tyc">
         <h1 id="tyc">Terminos y condiciones</h1>
