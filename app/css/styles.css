@@ -13,7 +13,7 @@
 }
 
 .fondo2{
-    background-image: url(../imagenes/Fondo2.jpg);
+    background-image: linear-gradient(rgba(233, 241, 248, 0.15),rgba(235, 239, 250, 0.50)),url(../imagenes/Fondo2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -33,21 +33,16 @@
     background-attachment: fixed;
 }
 
-ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: flex-start;
+.navbar-brand{
+    color: black;
+    text-decoration: none;
 }
 
-li{
-    list-style: none;
-    margin: 1em;
-    padding: 0.5em;
+.navbar-brand img{
+    width: 3em;
 }
 
-li a{
-    display: inline-block;
+.navbar-brand:hover{
     color: black;
     text-decoration: none;
 }
@@ -65,38 +60,33 @@ li a{
 }
 
 .logo_mf img{
-    height: 5em;
+    height: 3em;
 }
 
 .nav_mf{
     background-color: #E2F0EF;
-    border-radius: 6em;
+    border-radius: 1em;
     align-self: center;
-    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(100, 65, 19, 0.6);
 }
 .login_mf{
     background-color: #313e50;
-    border-radius: 5em;
+    border-radius: 1em;
     flex-grow: 0.1;
     display: flex;
     justify-content: center;
     align-self: center;
-    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(100, 65, 19, 0.6);
 }
 
-.login_mf > a{
-    color: white;
+.nav-login{
+    background-color: #313E50;
 }
 
-/*css pablo*/
-
-.container {
-    width: 360px;
-    align-items: center;
-    padding: 20px;
-    border-radius: 12px;
-    background: rgba(255, 255, 255, 0.30);
-    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(100, 65, 19, 0.6);
+.sec_pregunta{
+    margin: 6em 4em; 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .container h1 {

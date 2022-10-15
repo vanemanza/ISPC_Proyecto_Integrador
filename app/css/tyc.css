@@ -23,21 +23,24 @@ body{
     margin: 0 5%;
 }
 #tyc{
-    font-family: 'Noto Sans JP', sans-serif;
     text-align: center;
 }
 p.tyc{
-    font-family: 'Noto Sans JP', sans-serif;
     font-size: 10px;
     text-align: justify;
+    color: black;
+}
+span{
+    font-size: 12px;
+    font-weight:-200 bold;
 }
 /*go top*/
 .go-top-container{
     position: fixed;
     bottom: 4rem;
     right: 4rem;
-    width: 6.6rem;
-    height: 6.6rem;
+    width: 3.3rem;
+    height: 3.3rem;
     z-index: -1;
 }
 
@@ -51,16 +54,14 @@ p.tyc{
     left: 50%;
     transform: translate(-50%,-50%);
     z-index: -1;
-
-
 }
-.go-top-btn i {
+.go-top-btn svg{
     position: absolute;
-    font-size: 1.7rem;
-    top: 48%;
+    font-size: 5.5rem;
+    font-weight: 100;
     left: 50%;
     transform: translate(-50%,-50%) scale(0);
-    color: #fff;
+    color: white;
     transition: 0.2s;
 
 
@@ -70,12 +71,15 @@ p.tyc{
 }
 
 .show .go-top-btn{
+    position: absolute;
     animation: popup .3s ease-in-out;
-    width: 5.5em;
-    height: 5.5em;
+    width: 3.3em;
+    height: 3.3em;
     z-index: 11;
+    color: white;
+
 }
-.show i{
+.show svg{
     transform: translate(-50%,50%) scale(1);
 }
 @keyframes popup{
@@ -88,7 +92,7 @@ p.tyc{
         height: 8rem;
     }
     100%{
-        width: 6.6rem;
-        height: 6.6rem;
+        width: 3.3rem;
+        height: 3.3rem;
     }
 }
