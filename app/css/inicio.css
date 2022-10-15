@@ -1,3 +1,14 @@
+.body1{ 
+    background: url(../imagenes/Fondo2.jpg) fixed no-repeat;
+    background-size: cover;
+}
+
+
+.container-index{
+    margin: 0 5%;
+}
+
+
 ol li{
     list-style: decimal;
     margin: 1.5em
