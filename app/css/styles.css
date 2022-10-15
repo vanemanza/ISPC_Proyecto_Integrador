@@ -2,7 +2,7 @@
     margin: 0em;
     padding: 0em;
     font-family: 'Roboto', sans-serif;
-    font-weight:bolder;
+    font-weight: bold;
 }
 
 .fondo1{
@@ -65,108 +65,95 @@ li a{
 }
 
 .logo_mf img{
-    height: 3em;
+    height: 5em;
 }
 
 .nav_mf{
     background-color: #E2F0EF;
-    border-radius: 1em;
+    border-radius: 6em;
     align-self: center;
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(100, 65, 19, 0.6);
 }
 .login_mf{
     background-color: #313e50;
-    border-radius: 1em;
+    border-radius: 5em;
     flex-grow: 0.1;
     display: flex;
     justify-content: center;
     align-self: center;
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(100, 65, 19, 0.6);
 }
 
 .login_mf > a{
     color: white;
 }
 
-.sec_pregunta{
-    margin: 6em 4em; 
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-around;
-}
+/*css pablo*/
 
-.pregunta{
-    font-weight: bolder;
-    align-self:flex-start;
-    padding: 0.2em;
-    width:fit-content;
-    background-color: #edeaea;
-    border-radius: 1em;
-}
-
-.pregunta ~ p{
-    font-weight: 900;
-    display: flex;
-    justify-content:flex-start;
-    margin-bottom: 2em;
-}
-
-.sec_rifasactuales > h3{
-    font-weight: bolder;
-    margin-bottom: 0.5em;
-}
-
-.sec_rifasactuales{
-    text-align: center;
-}
-
-.busqueda{
-    border: 0.1em solid rgb(82, 81, 81); 
-    border-radius: 1em;
-}
-
-.boton{
-    padding: 0.4em;
-    color: white;
-    font-size: small;
-    border: 0.1em;
-    background-color: #313e50;
-    border-radius: 1em;
-}
-
-.contenedorrifas{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.p_fila{
-    opacity: 0.5;
-    color: white;
-    background-color: #a6a6a6;
-    width: 10em;
-    height: 10em;
-    border-radius: 1em;
-    display: flex;
-    justify-content: center;
+.container {
+    width: 360px;
     align-items: center;
-    margin: 3em 2em;
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.30);
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(100, 65, 19, 0.6);
 }
 
-.s_fila{
-    opacity: 0.5;
+.container h1 {
+    font-size: 35px;
+    margin-bottom: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.container form {
+    font-size: 15px;
+}
+
+.container form .form-group {
+    margin-bottom: 12px;
+}
+
+.form-check-input {
+    padding: 8px;
+    margin-top: 8px;
+}
+
+.container form input[type="submit"] {
+    font-size: 20px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input {
+    border-color: rgb(55, 73, 151);
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(100, 65, 19, 0.6);
+    outline: 0 none;
+}
+
+.registrate {
+    color: blue;
+}
+
+.ingresa {
     color: white;
-    background-color: #3f7973;
-    width: 10em;
-    height: 10em;
-    border-radius: 1em;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 3em 2em;
 }
 
-.p_fila:hover, .s_fila:hover{
-    opacity: 1.0;
+/*danna*/
+.form-select {
+    width: 360px;
+    align-items: center;
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.30);
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(100, 65, 19, 0.6);
+}
+
+.form-control {
+    width: 360px;
+    align-items: center;
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.30);
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(100, 65, 19, 0.6);
 }
