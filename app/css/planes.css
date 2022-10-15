@@ -1,12 +1,7 @@
-.container{
-    padding: 100px;
-    /*height: auto;*/
-    
-}
-
 .bodyfondo{
-    background: url(../img/fondo-planes.jpg);
+    background: url(../img/fondo-planes.jpg)fixed no-repeat;
     background-size: cover;
+
 }
 
 .tituloplanes{
@@ -27,6 +22,17 @@
     
 }
 
+@media screen and (max-width: 425px) {
+    .t-titulo{
+        color:var(#000)
+    }
 
+    .card{
+        width: 250px;
+        margin: auto;
+        
+
+    }
+}
 
 
