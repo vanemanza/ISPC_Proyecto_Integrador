@@ -24,6 +24,10 @@ p.tyc{
     text-align: justify;
     color: black;
 }
+span{
+    font-size: 12px;
+    font-weight:-200 bold;
+}
 /*go top*/
 .go-top-container{
     position: fixed;
