@@ -13,7 +13,7 @@
 }
 
 .fondo2{
-    background-image: url(../imagenes/Fondo2.jpg);
+    background-image: linear-gradient(rgba(233, 241, 248, 0.15),rgba(235, 239, 250, 0.50)),url(../imagenes/Fondo2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -33,61 +33,33 @@
     background-attachment: fixed;
 }
 
-ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: flex-start;
-}
-
-li{
-    list-style: none;
-    margin: 1em;
-    padding: 0.5em;
-}
-
-li a{
-    display: inline-block;
+.navbar-brand{
     color: black;
     text-decoration: none;
 }
 
-.logo_mf > a:hover, .nav_mf > a:hover{
+.navbar-brand img{
+    width: 3em;
+}
+
+.navbar-brand:hover{
     color: black;
+    text-decoration: none;
 }
 
-.login_mf > a:hover{
-    color: white;
-}
-
-.logo_mf{
-    display: flex;
-}
-
-.logo_mf img{
-    height: 3em;
-}
-
-.nav_mf{
+.nav-link{
     background-color: #E2F0EF;
     border-radius: 1em;
-    align-self: center;
-}
-.login_mf{
-    background-color: #313e50;
-    border-radius: 1em;
-    flex-grow: 0.1;
-    display: flex;
-    justify-content: center;
-    align-self: center;
+    margin: 1em;
+    text-align: center;
 }
 
-.login_mf > a{
-    color: white;
+.nav-login{
+    background-color: #313E50;
 }
 
 .sec_pregunta{
-    margin: 6em 4em; 
+    margin: 1em 4em; 
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
