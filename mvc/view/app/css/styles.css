@@ -142,15 +142,3 @@
 .p_fila:hover, .s_fila:hover{
     opacity: 1.0;
 }
-
-footer {
-    position: fixed;
-    bottom: 2%;
-    right: 2%; 
-    letter-spacing: 0.2em;
-    font-size: 3em;
-}
-
-footer a{
-    color: black;
-}
