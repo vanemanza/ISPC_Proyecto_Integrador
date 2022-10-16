@@ -1,0 +1,32 @@
+.bodyfondo{
+    background: url(../imagenes/fondo-planes.jpg)fixed no-repeat;
+    background-size: cover;
+
+}
+
+.tituloplanes{
+    text-align: center;
+    padding-bottom: 50px;
+    font-weight: bold;
+    color: #000;
+    
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(233, 231, 231, 0.50);
+    transform: translateY(-3%);
+}
+
+.card img{
+    width: 100%;
+    height: 225px;
+    
+}
+
+#raffleDescription{
+    display: flex;
+    align-items: center;
+}
+
+
+

@@ -1,0 +1,83 @@
+body{
+    background: linear-gradient(rgba(233, 241, 248, 0.05),rgba(235, 239, 250, 0.10)),url("../imagenes/Fondo1.jpg") no-repeat fixed;
+    background-size: cover;
+    
+
+}
+.container-tyc{
+    margin: 0 5%;
+}
+#tyc{
+    text-align: center;
+}
+p.tyc{
+    font-size: 10px;
+    text-align: justify;
+    color: black;
+}
+span{
+    font-size: 12px;
+    font-weight:-200 bold;
+}
+/*go top*/
+.go-top-container{
+    position: fixed;
+    bottom: 4rem;
+    right: 4rem;
+    width: 3.3rem;
+    height: 3.3rem;
+    z-index: -1;
+}
+
+.go-top-btn{
+    width: 0rem;
+    height: 0rem;
+    background: #0f5769;
+    border-radius: 50%;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+}
+.go-top-btn svg{
+    position: absolute;
+    font-size: 5.5rem;
+    font-weight: 100;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    color: white;
+    transition: 0.2s;
+
+
+}
+.show{
+    z-index: 10;
+}
+
+.show .go-top-btn{
+    position: absolute;
+    animation: popup .3s ease-in-out;
+    width: 3.3em;
+    height: 3.3em;
+    z-index: 11;
+    color: white;
+
+}
+.show svg{
+    transform: translate(-50%,50%) scale(1);
+}
+@keyframes popup{
+    0%{
+        width: 0rem;
+        height: 0rem;
+    }
+    50%{
+        width:8rem;
+        height: 8rem;
+    }
+    100%{
+        width: 3.3rem;
+        height: 3.3rem;
+    }
+}
