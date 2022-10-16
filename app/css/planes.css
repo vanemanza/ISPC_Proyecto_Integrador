@@ -1,5 +1,5 @@
 .bodyfondo{
-    background: url(../img/fondo-planes.jpg)fixed no-repeat;
+    background: url(../imagenes/fondo-planes.jpg)fixed no-repeat;
     background-size: cover;
 
 }
@@ -23,17 +23,10 @@
     
 }
 
-@media screen and (max-width: 425px) {
-    .t-titulo{
-        color:var(#000)
-    }
-
-    .card{
-        width: 250px;
-        margin: auto;
-        
-
-    }
+#raffleDescription{
+    display: flex;
+    align-items: center;
 }
+
 
 
