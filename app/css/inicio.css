@@ -1,5 +1,5 @@
 .body1{ 
-    background: url(../imagenes/Fondo2.jpg) fixed no-repeat;
+    background: url(/imagenes/Fondo2.jpg) fixed no-repeat;
     background-size: cover;
 }
 
@@ -84,4 +84,3 @@ ol li{
     margin-left: 10px;
   
 }
-
