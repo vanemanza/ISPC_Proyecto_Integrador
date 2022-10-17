@@ -1,5 +1,5 @@
 .body1{ 
-    background: url(/mvc/view/app/imagenes/Fondo2.jpg) fixed no-repeat;
+    background: url(../imagenes/Fondo2.jpg) fixed no-repeat;
     background-size: cover;
 }
 
