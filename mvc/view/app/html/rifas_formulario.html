@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mirifa.net - Crear tu rifa</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="/mvc/view/app/css/form_rifa.css">
-    <link rel="stylesheet" href="/mvc/view/app/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/form_rifa.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
@@ -18,40 +23,41 @@
 </head>
 <body>
     <!-- seccion header -->
-    <div class="header">
-
+    <header>
       <nav class="navbar navbar-expand-lg d-flex">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="./index.html">
-                <img src="../imagenes/Logo-mirifa.png" alt="Logo" class="d-inline-block">MIRIFA.NET
-            </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-around" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./rifasactuales.html">RIFAS ACTUALES</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./planes.html">PLANES</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">CONTACTANOS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./preguntasfrecuentes.html">PREGUNTAS FRECUENTES</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-login text-white" href="#">INGRESA</a>
-              </li>
-              
-            </ul>
+          <div class="container-fluid">
+              <a class="navbar-brand" href="../html/index.html">
+                  <img src="../imagenes/Logo-mirifa.png" alt="Logo" class="d-inline-block">MIRIFA.NET
+              </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-around" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+  
+                  <a class="nav-link active" aria-current="page" href="../html/rifasactuales.html">RIFAS ACTUALES</a>
+  
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../html/planes.html">PLANES</a>
+                </li>
+                <li class="nav-item">
+  
+                  <a class="nav-link" href="../html/contactanos.html">CONTACTANOS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../html/preguntasfrecuentes.html">PREGUNTAS FRECUENTES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-login text-white" href="../html/login.html">INGRESA</a>
+  
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
-
-    </div>
+        </nav>
+  </header>
 
     <!-- seccion contenido  -->
     <div class="container-fluid content">
@@ -59,7 +65,7 @@
         <div class="row mx-3">
               <!-- primer columna -->
               <div class="col-4">
-                <img class="img-fluid" src="/mvc/view/app/imagenes/gente1.png" alt="imagen crear rifa">
+                <img class="img-fluid" src="../imagenes/gente1.png" alt="imagen crear rifa">
                 <div class="info_final ">                    
                   <p class="fw-bold mb-0">Los datos personales no serán publicados</p>
                   <p class="mb-0">Compruebe que los datos ingresados seran correctos</p>
@@ -154,7 +160,7 @@
                
                 <!-- <button class="btn btn-primary rounded-pill" type="button" style="margin-top:23px;">ENVIAR</button> -->
                 <li class="nav-item">
-                  <a class="nav-link nav-login text-white" href="./rifasactuales.html">ENVIAR</a>
+                  <a class="nav-link nav-login text-white" href="../html/rifasactuales.html">ENVIAR</a>
                 </li>
                 
                 
@@ -170,30 +176,56 @@
 
     <!-- seccion footer -->
 
-    <div class="footer" style="padding:15px;">     
+    <footer class="footer"> 
+      <br>
+      <br>
+      <div class="container-fluid pt-3 pb-3">
+          <div class="row justify-content-center">
+              <div class="col-12 col-md-3">
+                  <h5><b>MiRifa.net</b></h5>
+                      <p>Sistema de venta, gestión y administración de Rifas virtuales con sorteo de ganadores.</p>
+              </div>
+              
+              <div class="col-12 col-md-3">
+                  <h5><b>Nosotros</b></h5>
+                      <p>Tenemos más de 10 años de experiencia siendo especialistas en soluciones tecnológicas, modernas, intuitivas y seguras.</p>
+              </div> 
 
+              <div class="col-12 col-md-3">
+                  <h5><b>Contacto</b></h5>
+                      <p>Vía E-mail: info@mirifa.net</p>
+                      
+                      <p>En nuestras redes sociales: @mirifanet</p>
+              
+                      <p>Por teléfono: 91-1234-567</p>
+                      
+              </div> 
 
               <div class= "col-12 col-md-3">
                   <h5><b>Síguenos</b></h5>
                   <br>
 
-                  <img src="/mvc/view/app/imagenes/logotipo-de-instagram.png" 
+
+                  <img src="../imagenes/logotipo-de-instagram.png" 
                       class="mb-3" alt="30" width="30" height="30">
-                  <img src="/mvc/view/app/imagenes/facebook.png" 
+                  <img src="../imagenes/facebook.png" 
                       class="mb-3" alt="30" width="30" height="30">
-                  <img src="/mvc/view/app/imagenes/whatsapp.png" 
+                  <img src="../imagenes/whatsapp.png" 
                       class="mb-3" alt="30" width="30" height="30">
-                  <img src="/mvc/view/app/imagenes/gorjeo.png" 
+                  <img src="../imagenes/gorjeo.png" 
+
                       class="mb-3" alt="30" width="30" height="30">
               </div> 
               
 
               <div class="row justify-content-center">
                   <div class="text-center social-links mt-4">
-                      <p><span class="legalLinks"><a href="/html/terms.html" target="_blank" rel="nofollow noopener noreferrer"><h6>Terminos y Condiciones</h6></a></span>
+
+                      <p><span class="legalLinks"><a href="../html/terms.html" target="_blank" rel="nofollow noopener noreferrer"><h6>Terminos y Condiciones</h6></a></span>
                           <br>
                           © 2022 
-                          <a href="https://www.MiRifa.net" target="_blank">MiRifa</a>
+                          <a href="../html/index.html" target="_blank">MiRifa</a>
+
                           ™. Todos los derechos reservados.
                       </p>
                   </div>
