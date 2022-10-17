@@ -62,6 +62,7 @@ ol li{
     color: #0E7B5B;
  }
 
+<<<<<<< HEAD:app/css/inicio.css
  @media screen and (max-width: 1200px){
     .container-index{
         background: url(../imagenes/Fondo2.jpg) no-repeat;
@@ -70,3 +71,10 @@ ol li{
 }
 }
  
+=======
+.social1{
+    width: 60px;
+    margin-left: 10px;
+  
+}
+>>>>>>> develop:mvc/view/app/css/inicio.css
