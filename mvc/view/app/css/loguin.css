@@ -6,28 +6,28 @@
 }
 
 .fondo1{
-    background-image: url(/imagenes/Fondo1.jpg);
+    background-image: url(/mvc/view/app/imagenes/Fondo1.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
 .fondo2{
-    background-image: url(/imagenes/Fondo2.jpg);
+    background-image: url(/mvc/view/app/imagenes/Fondo2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
 .fondo3{
-    background-image: url(/imagenes/Fondo3.jpg);
+    background-image: url(/mvc/view/app/imagenes/Fondo3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
 .fondo4{
-    background-image: url(/imagenes/Fondo4.jpg);
+    background-image: url(/mvc/view/app/imagenes/Fondo4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
