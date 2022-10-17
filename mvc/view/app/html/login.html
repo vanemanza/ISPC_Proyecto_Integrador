@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/registro_login.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <title>Rifas actuales</title>
+    <title>MIRIFA.NET - Login</title>
 </head>
 <body class="fondo1">
-    <header>
-      <nav class="navbar navbar-expand-lg d-flex">
+  <header>
+    <nav class="navbar navbar-expand-lg d-flex">
         <div class="container-fluid">
             <a class="navbar-brand" href="./index.html">
                 <img src="../imagenes/Logo-mirifa.png" alt="Logo" class="d-inline-block">MIRIFA.NET
@@ -38,28 +39,56 @@
               <li class="nav-item">
                 <a class="nav-link nav-login text-white" href="#">INGRESA</a>
               </li>
+              
             </ul>
           </div>
         </div>
       </nav>
-    </header>
-    <section class="sec_rifasactuales">
-        <h3>Rifas actuales</h3>
-        <form action="">
-            <input type="text" name="rifas" class="busqueda">
-            <input type="button" value="BUSCAR RIFA" class="boton">
-        </form>
-        <div class="contenedorrifas">
-            <div class="p_fila">Rifa 1</div>
-            <div class="p_fila">Rifa 2</div>
-            <div class="p_fila">Rifa 3</div>
-            <div class="p_fila">Rifa 4</div>
-            <div class="s_fila">Rifa 5</div>
-            <div class="s_fila">Rifa 6</div>
-            <div class="s_fila">Rifa 7</div>
-            <div class="s_fila">Rifa 8</div>
+</header>
+    <div class="row align-items-center justify-content-center">
+        <div class="col-12 col-sm-8 col-md-6 col-lg-4 col-xl-4 ">
+            <div class="container mb-3 mt-1 mb-1">
+
+    
+
+                <h1 class="text-center">Ingresar</h1>
+                <form action="" method="post" class="needs-validation">
+                    
+                  <div class="form-group">
+                      <label class="form-label" for="nombreusuario">Nombre de Usuario</label>
+                      <input class="form-control rounded-pill" type="texto" id="nombreusuario">
+                  </div>
+                        
+                  <div class="form-group">
+                      <label class="form-label" for="password">Contraseña</label>
+                      <input class="form-control rounded-pill" type="password" id="password">
+                  </div>
+
+                  <div class="form-group">
+                      <label class="form-label" for="password">Repetir Contraseña</label>
+                      <input class="form-control rounded-pill" type="password" id="password">
+                  </div>
+            
+                  <div class="form-check mb-4">
+                      <label for="conectado" class="form-check-label d-inline-flex p-1 bd-highlight">Recordarme</label>
+                      <input type="checkbox" name="conectado" class="form-check-input" id="conectado">
+                  </div>
+            
+                  <a href="index.html" class="btn btn-success w-100 mt-4 rounded-pill" type="submit">Ingresar</a>
+            
+                  <div class="my-4">
+                    <span>¿Aun no tienes una cuenta?
+                    <a class="registrate" href="registro.html">Registrate</a></span> 
+                  </div>
+                    <span>¿Olvidaste tu contraseña?
+                    <a class="registrate" href="#">Recuperar contraseña</a></span> 
+                  </div>
+                </form>
+            </div>
+
         </div>
-    </section>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
