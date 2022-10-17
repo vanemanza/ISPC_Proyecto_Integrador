@@ -6,25 +6,12 @@
 
 body {
 
-    background-image: url("/mvc/view/app/imagenes/Fondo2.jpg");
+    background-image: url("../imagenes/Fondo2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    /*configurar el fondo para q sea responsive y acompañe los distintos tamaños*/
-
+  
 }
-
-/*estilo provisorio para identificar el espacio de la navbar*/
-.header {
-
-    /*background-color: rgb(240, 207, 207);*/
-    opacity:0.4;
-    width: 100%;
-    height: 110px;
-    text-align: center;
-    
-}
-
 
 /* estilos del formulario de rifa*/
 .content {
@@ -44,17 +31,4 @@ label {
     border-radius: 10px;
     margin-top: 50px;
     padding: 10px;
-}
-/* estilos del footer - provisorio?*/
-.footer {
-
-    background-color: rgb(240, 207, 207);
-    opacity:0.3;
-    width: 100%;
-    /* height: 60px; */
-    text-align: center;
-    margin-top: 50px;
-    /*position: absolute;*/
-    bottom: 0;
-  
 }
