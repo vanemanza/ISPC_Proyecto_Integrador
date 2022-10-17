@@ -6,7 +6,7 @@
 
 body {
 
-    background-image: url("../imagenes/Fondo2.jpg");
+    background-image: url("/mvc/view/app/imagenes/Fondo2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
