@@ -1,5 +1,5 @@
 .bodyfondo{
-    background: url(../imagenes/fondo-planes.jpg)fixed no-repeat;
+    background: url(/mvc/view/app/imagenes/fondo-planes.jpg)fixed no-repeat;
     background-size: cover;
 
 }
