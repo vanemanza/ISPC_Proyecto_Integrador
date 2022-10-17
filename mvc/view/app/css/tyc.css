@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(rgba(233, 241, 248, 0.05),rgba(235, 239, 250, 0.10)),url("/mvc/view/app/imagenes/Fondo1.jpeg") no-repeat fixed;
+    background: linear-gradient(rgba(233, 241, 248, 0.05),rgba(235, 239, 250, 0.10)),url("../imagenes/Fondo1.jpeg") no-repeat fixed;
     background-size: cover;
     
 
