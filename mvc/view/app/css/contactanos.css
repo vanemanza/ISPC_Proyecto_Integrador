@@ -1,0 +1,54 @@
+.container {
+    width: 360px;
+    align-items: center;
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.30);
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(100, 65, 19, 0.6);
+}
+
+.container h1 {
+    font-size: 35px;
+    margin-bottom: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+
+
+.form-check-input {
+    padding: 8px;
+    margin-top: 8px;
+}
+
+.container form input[type="submit"] {
+    font-size: 20px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input {
+    border-color: rgb(55, 73, 151);
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(100, 65, 19, 0.6);
+    outline: 0 none;
+}
+
+
+/*danna*/
+.form-select {
+    width: 360px;
+    align-items: center;
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.30);
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(100, 65, 19, 0.6);
+}
+
+.form-control {
+    width: 360px;
+    align-items: center;
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.30);
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(100, 65, 19, 0.6);
+}
