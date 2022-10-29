@@ -24,12 +24,12 @@ CREATE TABLE `mirifa`.`usuario` (
     ON UPDATE CASCADE);
 
 CREATE TABLE `mirifa`.`rifador` (
-  `id_rifador` INT NOT NULL AUTO_INCREMENT,
+  `id_rifador` VARCHAR(45) NOT NULL,
   `id_usuario` INT NOT NULL,
   `nombre` VARCHAR(45) NOT NULL,
-  `dni` INT NOT NULL,
-  `telefono` INT NOT NULL,
-  `cbu` INT NOT NULL,
+  `dni` VARCHAR(45) NOT NULL,
+  `telefono` VARCHAR(45) NOT NULL,
+  `cbu` VARCHAR(45) NOT NULL,
   `redes_sociales` VARCHAR(45) NULL,
   PRIMARY KEY (`id_rifador`),
   UNIQUE INDEX `dni_UNIQUE` (`dni` ASC) VISIBLE,
@@ -59,12 +59,12 @@ CREATE TABLE `mirifa`.`premio` (
 CREATE TABLE `mirifa`.`rifa` (
   `id_rifa` INT NOT NULL AUTO_INCREMENT,
   `titulo` VARCHAR(45) NOT NULL,
-  `id_rifador` INT NOT NULL,
+  `id_rifador` VARCHAR(45) NOT NULL,
   `id_premio` INT NOT NULL,
   `cant_nros` INT NOT NULL,
   `valor_nro` INT NOT NULL,
   `medio_de_pago` INT NOT NULL,
-  `cbu` INT NULL,
+  `cbu` VARCHAR(45) NULL,
   `banco` VARCHAR(45) NULL,
   `fecha_sorteo` DATE NOT NULL,
   `telefono` VARCHAR(45) NOT NULL,
@@ -92,7 +92,7 @@ CREATE TABLE `mirifa`.`visitante` (
   `id_visitante` INT NOT NULL AUTO_INCREMENT,
   `nombre` VARCHAR(45) NOT NULL,
   `email` VARCHAR(45) NOT NULL,
-  `nros_comprados` INT NULL,
+  `nros_comprados` VARCHAR(45) NULL,
   `comprobante` VARCHAR(45) NULL,
   PRIMARY KEY (`id_visitante`),
   UNIQUE INDEX `email_UNIQUE` (`email` ASC) VISIBLE);
