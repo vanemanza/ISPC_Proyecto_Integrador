@@ -1,1 +1,0 @@
-# acá va el código q funciona como intermediario entre la vista y el modelo
