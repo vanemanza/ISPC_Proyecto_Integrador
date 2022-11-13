@@ -4,9 +4,9 @@ USE `mirifa` ;
 CREATE TABLE `mirifa`.`plan` (
   `id_plan` INT NOT NULL AUTO_INCREMENT,
   `titulo` VARCHAR(45) NOT NULL,
-  `descripcion` VARCHAR(45) NOT NULL,
+  `descripcion` VARCHAR(70) NOT NULL,
   PRIMARY KEY (`id_plan`),
-  UNIQUE INDEX `titulo_UNIQUE` (`titulo` ASC) VISIBLE);
+  UNIQUE INDEX `titulo_UNIQUE` (`titulo` ASC));
 
 CREATE TABLE `mirifa`.`usuario` (
   `id_usuario` INT NOT NULL AUTO_INCREMENT,
@@ -15,8 +15,8 @@ CREATE TABLE `mirifa`.`usuario` (
   `login_status` CHAR(1) NULL,
   `id_plan` INT NOT NULL,
   PRIMARY KEY (`id_usuario`),
-  UNIQUE INDEX `email_UNIQUE` (`email` ASC) VISIBLE,
-  INDEX `id_plan_idx` (`id_plan` ASC) VISIBLE,
+  UNIQUE INDEX `email_UNIQUE` (`email` ASC) ,
+  INDEX `id_plan_idx` (`id_plan` ASC),
   CONSTRAINT `id_plan`
     FOREIGN KEY (`id_plan`)
     REFERENCES `mirifa`.`plan` (`id_plan`)
@@ -32,8 +32,8 @@ CREATE TABLE `mirifa`.`rifador` (
   `cbu` VARCHAR(45) NOT NULL,
   `redes_sociales` VARCHAR(45) NULL,
   PRIMARY KEY (`id_rifador`),
-  UNIQUE INDEX `dni_UNIQUE` (`dni` ASC) VISIBLE,
-  UNIQUE INDEX `id_usuario_UNIQUE` (`id_usuario` ASC) VISIBLE,
+  UNIQUE INDEX `dni_UNIQUE` (`dni` ASC),
+  UNIQUE INDEX `id_usuario_UNIQUE` (`id_usuario` ASC),
   CONSTRAINT `id_usuario`
     FOREIGN KEY (`id_usuario`)
     REFERENCES `mirifa`.`usuario` (`id_usuario`)
@@ -69,9 +69,9 @@ CREATE TABLE `mirifa`.`rifa` (
   `fecha_sorteo` DATE NOT NULL,
   `telefono` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`id_rifa`),
-  INDEX `id_rifador_idx` (`id_rifador` ASC) VISIBLE,
-  INDEX `id_premio_idx` (`id_premio` ASC) VISIBLE,
-  INDEX `medio_de_pago_idx` (`medio_de_pago` ASC) VISIBLE,
+  INDEX `id_rifador_idx` (`id_rifador` ASC),
+  INDEX `id_premio_idx` (`id_premio` ASC),
+  INDEX `medio_de_pago_idx` (`medio_de_pago` ASC),
   CONSTRAINT `id_rifador`
     FOREIGN KEY (`id_rifador`)
     REFERENCES `mirifa`.`rifador` (`id_rifador`)
@@ -95,15 +95,15 @@ CREATE TABLE `mirifa`.`visitante` (
   `nros_comprados` VARCHAR(45) NULL,
   `comprobante` VARCHAR(45) NULL,
   PRIMARY KEY (`id_visitante`),
-  UNIQUE INDEX `email_UNIQUE` (`email` ASC) VISIBLE);
+  UNIQUE INDEX `email_UNIQUE` (`email` ASC));
 
 CREATE TABLE `mirifa`.`numero` (
   `id_nro` INT NOT NULL AUTO_INCREMENT,
   `id_rifa` INT NOT NULL,
   `id_visitante` INT NOT NULL,
   PRIMARY KEY (`id_nro`),
-  INDEX `id_rifa_idx` (`id_rifa` ASC) VISIBLE,
-  INDEX `id_visitante_idx` (`id_visitante` ASC) VISIBLE,
+  INDEX `id_rifa_idx` (`id_rifa` ASC),
+  INDEX `id_visitante_idx` (`id_visitante` ASC),
   CONSTRAINT `id_rifa`
     FOREIGN KEY (`id_rifa`)
     REFERENCES `mirifa`.`rifa` (`id_rifa`)
@@ -115,3 +115,49 @@ CREATE TABLE `mirifa`.`numero` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
+#Consultas : Insert - Select - Update - JOIN
+/*INSERT INTO plan(titulo, descripcion) 
+VALUES('Plan Básico','Panel Administrador, rifas ilimitadas y sorteador de ganadores');
+INSERT INTO plan(titulo, descripcion) 
+VALUES('Plan Empresa','Todos lo Basico, múlti-admins y soporte 24/7');
+INSERT INTO plan(titulo, descripcion) 
+VALUES('Plan Gratis','Crea tu causa, numeros infinitos y a rifar!');
+
+INSERT INTO usuario(email, password, login_status, id_plan)
+VALUES('email@email.com', '1234', 'A', 3);
+INSERT INTO usuario(email, password, login_status, id_plan)
+VALUES('empresa@soporte.com', 'asdf', 'A', 2);
+INSERT INTO usuario(email, password, login_status, id_plan)
+VALUES('email@gmail.com', 'asd123', 'A', 1);
+SELECT * FROM usuario;
+UPDATE usuario SET password= '123456789' WHERE id_usuario = '1';
+SELECT Usuario.id_usuario, Usuario.email, Usuario.id_plan, Plan.id_plan, Plan.titulo from usuario 
+INNER JOIN plan on Usuario.id_usuario = Plan.id_plan;
+
+INSERT INTO rifador(id_rifador, id_usuario, nombre, dni, telefono, cbu, redes_sociales)
+VALUES('1_r', 1, 'Jose', '22333444', '3517778899', '1234567890', '@jose.jose');
+INSERT INTO rifador(id_rifador, id_usuario, nombre, dni, telefono, cbu, redes_sociales)
+VALUES('2_r', 2, 'Hogar de perros', '99888777', '3513334455', '10987654321', '@tuhogardog');
+
+INSERT INTO medio_de_pago(tipo) 
+VALUES('Tarjeta de credito');
+INSERT INTO medio_de_pago(tipo) 
+VALUES('Tarjeta de debito');
+INSERT INTO medio_de_pago(tipo) 
+VALUES('Transferencia');
+INSERT INTO medio_de_pago(tipo) 
+VALUES('Mercado pago');
+
+INSERT INTO premio(descripcion)
+VALUES('Cordero de 5kg');
+INSERT INTO premio(descripcion)
+VALUES('Costillar de 5kg');
+
+INSERT INTO rifa(titulo,id_rifador,id_premio,cant_nros,valor_nro,medio_de_pago,cbu,banco,fecha_sorteo,telefono)
+VALUES('Compra de alimento', '2_r', 1, 300, 100, 3, '10987654321', 'Santander', '2022-12-10', '3513334455');
+INSERT INTO rifa(titulo,id_rifador,id_premio,cant_nros,valor_nro,medio_de_pago,cbu,banco,fecha_sorteo,telefono)
+VALUES('Viaje de egresados', '1_r', 2, 250, 150, 4, '1234567890', 'Mercado Pago', '2022-11-30', '3517778899');
+SELECT * FROM rifa;
+UPDATE rifa SET cant_nros = 500 WHERE id_rifa = '2';
+SELECT Rifa.titulo, Rifa.id_rifador, Rifador.id_rifador, Rifador.nombre
+FROM rifa INNER JOIN rifador ON Rifa.id_rifador = Rifador.id_rifador;*/
