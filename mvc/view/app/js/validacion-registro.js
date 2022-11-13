@@ -40,7 +40,7 @@
         return false
         }
 
-        if (dni.value.length > 8)
+        if (dni.value.length < 8 || dni.value.length >8 )
         {
         alert ("Dni no valido")
         return false
