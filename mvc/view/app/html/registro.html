@@ -52,21 +52,40 @@
     
 
                 <h1 class="text-center">Registrarse</h1>
-                <form action="" method="post" class="needs-validation">
+
+                <form class="needs-validation" novalidate  id= "form" >
 
                   <div class="form-group">
                     <label class="form-label" for="nombre">Nombre</label>
-                    <input class="form-control rounded-pill" type="texto" id="nombre">
+                    <input class="form-control rounded-pill" type="texto" id="nombre" required>
+                    <div class="valid-feedback">
+                      Ok
+                    </div>
+                    <div class="invalid-feedback">
+                      Completar Nombre
+                    </div> 
                   </div>
 
                   <div class="form-group">
                     <label class="form-label" for="apellido">Apellido</label>
-                    <input class="form-control rounded-pill" type="texto" id="apellido">
+                    <input class="form-control rounded-pill" type="texto" id="apellido" required>
+                    <div class="valid-feedback">
+                      Ok
+                    </div>
+                    <div class="invalid-feedback">
+                      Completar Apellido
+                    </div> 
                   </div>  
 
                   <div class="form-group">
                     <label class="form-label" for="dni">DNI</label>
-                    <input class="form-control rounded-pill" type="number" id="dni">
+                    <input class="form-control rounded-pill" type="number" id="dni" required>
+                    <div class="valid-feedback">
+                      Ok
+                    </div>
+                    <div class="invalid-feedback">
+                      Completar DNI
+                    </div> 
                   </div>
 
                   <div class="form-group">
@@ -314,7 +333,7 @@
                   </div>
 
                   <div class="form-group">
-                    ciudad:
+                    Ciudad:
                     <select name="pais" class="form-control rounded-pill">
                       <option value="Elegirciudad" id="Ciudad">Seleccione una ciudad</option>
                       <option value="Buenos Aires">Buenos Aires</option>
@@ -342,34 +361,57 @@
                       <option value="Tierra del Fuego">Tierra del Fuego</option>
                       <option value="Tucuman">Tucuman</option>
                       </select>
+
                   </div>
                   
                   <div class="form-group">
                     <label class="form-label" for="telefono">Telefono</label>
-                    <input class="form-control rounded-pill" type="number" id="telefono">
+                    <input class="form-control rounded-pill" type="number" id="telefono" required>
+                    <div class="valid-feedback">
+                      Campo no obligatorio
+                    </div>
                   </div>
                     
                   <div class="form-group">
                       <label class="form-label" for="nombreusuario">Nombre de Usuario</label>
-                      <input class="form-control rounded-pill" type="texto" id="nombreusuario">
+                      <input class="form-control rounded-pill" type="texto" id="nombreusuario" required>
+                      <div class="valid-feedback">
+                        Nombre de Usuario correcto
+                      </div>
+                      <div class="invalid-feedback">
+                        Completar Nombre de Usuario
+                      </div> 
                   </div>
                         
                   <div class="form-group">
                       <label class="form-label" for="email">Correo Electrónico</label>
-                      <input class="form-control rounded-pill" type="email" id="email">
+                      <input class="form-control rounded-pill" type="email" id="email" required>
+                      <div class="valid-feedback">
+                        Correo Electrónico correcto
+                      </div>
+                      <div class="invalid-feedback">
+                        Ingrese un Correo Electrónico
+                      </div> 
                   </div>
             
                   <div class="form-group">
                       <label class="form-label" for="password">Contraseña</label>
-                      <input class="form-control rounded-pill" type="password" id="password">
+                      <input class="form-control rounded-pill" type="password" id="password" required>
+                      <div class="invalid-feedback">
+                        Ingrese una Contraseña
+                      </div>
                   </div>
 
                   <div class="form-group">
                       <label class="form-label" for="password">Repetir Contraseña</label>
-                      <input class="form-control rounded-pill" type="password" id="password">
+                      <input class="form-control rounded-pill" type="password" id="password1" required>
+                      <div class="invalid-feedback">
+                        Ingrese una Contraseña
+                      </div>
                   </div>
-            
-                  <a href="login.html" class="btn btn-success w-100 mt-4 rounded-pill" type="submit">Registrarse</a>
+
+                  <button class="btn btn-success w-100 mt-4 rounded-pill" style="background-color: #313e50; border-color: #313e50" type="submit" >Registrarse</button>
+                
 
                   <div class="my-4">
                   <span>¿Ya tienes una cuenta?
@@ -436,7 +478,7 @@
           </div>
       </div>
   </footer>
-
+    <script src="../js/validacion-registro.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
