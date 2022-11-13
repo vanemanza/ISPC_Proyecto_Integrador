@@ -12,6 +12,17 @@ class Visitante:
         self.nombre = nombre
         self.email = email
 
+    def __str__(self):
+        return f"{self.id_visitante} - {self.nombre} - {self.email} "        
+
+    def entrar(self):
+        # queda pendiente para cuando tengamos la conexion con la bd
+        pass
+
+    def salir(self):
+        # queda pendiente para cuando tengamos la conexion con la bd
+        pass    
+
 # se instancias visitantes para usar en los otros modelos
 # visitante_uno = Visitante(311, "Juana Perez", "uno@mail.com")        
 # visitante_dos = Visitante(322, "Maria Lopez", "dos@mail.com")      

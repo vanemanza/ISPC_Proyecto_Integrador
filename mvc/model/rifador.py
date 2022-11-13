@@ -13,6 +13,18 @@ class Rifador:
         self.id_rifador = id_rifador
         self.nombre = nombre
 
+    def __str__(self):
+        return f"{self.id_rifador} - {self.nombre}"        
+
+    def iniciar_sesion(self):
+        # queda pendiente para cuando tengamos la conexion con la bd
+        pass
+
+    def cerrar_sesion(self):
+        # queda pendiente para cuando tengamos la conexion con la bd
+        pass
+    
+
 # creo instancias de rifador para usar de ejemplos de prueba
 # 
 # rifador_uno = Rifador(1, "Rifador Uno")
