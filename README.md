@@ -6,27 +6,14 @@ Integrantes:
 
         Vanesa Manzanelli 
         Caro Pómpolo Maria Fernanda  
-        Rebechi Franco Ezequiel   
-        Bianco Sergio Alejandro  
+        Rebechi Franco Ezequiel    
         Bianco Viviana Lucia 
         Arana Braian Fabian 
         Maria Cuenca 
-        Erika Dayana Lucchesi Tevez  
         Danna Cruz 
         Pablo Casarella
 
-IMPORTANTE:
+Como equipo desarrollamos la aplicación [MiRifa.net](https://vanemanza.github.io/ISPC_Proyecto_Integrador/mvc/view/app/html/), para venta de rifas online, donde pueden participar organizaciones que deseen realizar un sorteo para una causa. 
 
-**SPRINT 1** Fecha Inicio = 03/10/2022 - Fecha de Fin = 17/10/2022 ****** En las próximas semanas se dejará más detallado cada punto.
+También desarrollamos nuestro [sitio institucional](http://34.95.216.141/) en Wordpress, donde podrás conocer más sobre los integrantes del grupo.
 
-• FrontEnd: Estructura HTML, semántica y estilos CSS
-• Navegabilidad - Links funcionales. Responsive
-• BOOTSTRAP y funcionalidad con JavaScript
-
-**SPRINT 2** Fecha Inicio = 17/10/2022 - Fecha de Fin = 14/11/2022 ****** En las próximas semanas se dejará más detallado cada punto.
-
-• Sitio funcional en hosting remoto de Sitio Institucional en WordPress y Frontend en subcarpeta (subdominio) y opcional linkeado al repositorio de GitHub/ GitHub Pages.
-
-• Backend
-    ◦ Script de la BD en MySQL
-    ◦ Consultas : Insert - Select - Update - JOIN
